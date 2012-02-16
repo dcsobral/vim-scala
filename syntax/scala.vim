@@ -68,7 +68,7 @@ syn keyword scalaObject object nextgroup=scalaClassName skipwhite
 syn keyword scalaTrait trait nextgroup=scalaClassName skipwhite
 syn match scalaDefName "[^ =:;([]\+" contained nextgroup=scalaDefSpecializer skipwhite
 syn match scalaValName "[^ =:;([]\+" contained
-syn match scalaVarName "[^ =:;([]\+" contained 
+syn match scalaVarName "[^ =:;([]\+" contained
 syn match scalaClassName "[^ =:;(\[]\+" contained nextgroup=scalaClassSpecializer skipwhite
 syn region scalaDefSpecializer start="\[" end="\]" contained contains=scalaDefSpecializer
 syn region scalaClassSpecializer start="\[" end="\]" contained contains=scalaClassSpecializer
@@ -136,7 +136,7 @@ syn sync fromstart
 
 " map Scala groups to standard groups
 hi link scalaKeyword Keyword
-hi link scalaKeywordModifier Function
+hi link scalaKeywordModifier Keyword
 hi link scalaAnnotation Include
 hi link scalaPackage Include
 hi link scalaImport Include
@@ -177,15 +177,7 @@ hi link scalaDefName Function
 hi link scalaDefSpecializer Function
 hi link scalaClassName Special
 hi link scalaClassSpecializer Special
-hi link scalaConstructor Special
+hi link scalaConstructor Function
 hi link scalaConstructorSpecializer scalaConstructor
 
 let b:current_syntax = "scala"
-
-" you might like to put these lines in your .vimrc
-"
-" customize colors a little bit (should be a different file)
-" hi scalaNew gui=underline
-" hi scalaMethodCall gui=italic
-" hi scalaValName gui=underline
-" hi scalaVarName gui=underline
