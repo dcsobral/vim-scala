@@ -14,7 +14,7 @@ endif
 let s:cpo_save = &cpo
 set cpo-=C
 
-CompilerSet makeprg=scalac
+CompilerSet makeprg=scalac\ %
 
 CompilerSet errorformat=%E%f:%l:\ %m,%-G%.%#
 

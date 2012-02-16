@@ -12,8 +12,8 @@ going to clone this repository because, well... you should.
 
 EXTRA REQUIREMENTS
 
-Convertion to operator style (<leader>s.) and surrounding with triple double-quotes
-(<leader>s") require the following plugin:
+Convertion to operator style (<leader>s.) and surrounding with triple
+double-quotes (<leader>s") require the following plugin:
 
 https://github.com/tpope/vim-surround
 
@@ -25,5 +25,12 @@ Additionally, code reformatting (<leader>i) requires scalariform:
 
 https://github.com/mdr/scalariform
 
-I put the downloaded jar file on my home's bin. If you place it elsewhere, you'll have
-to change ftplugin/scala.vim.
+I put the downloaded jar file on my home's bin. If you place it elsewhere,
+you'll have to change ftplugin/scala.vim.
+
+If scalac is on the PATH, one can use vim's make/quickfix stuff. You compile the
+current file with :make. Jump to the current error with :cc, to the next with
+:cn and to the previous one with :cr. For more information, see :help quickfix.
+
+There's no support at the moment for multiple files, or for sbt.
+
