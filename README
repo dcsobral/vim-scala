@@ -29,8 +29,13 @@ I put the downloaded jar file on my home's bin. If you place it elsewhere,
 you'll have to change ftplugin/scala.vim.
 
 If scalac is on the PATH, one can use vim's make/quickfix stuff. You compile the
-current file with :make. Jump to the current error with :cc, to the next with
-:cn and to the previous one with :cr. For more information, see :help quickfix.
+current file with :make, and it will jump to the first error. Jump to the error
+N with :ccN, to the next with :cn and to the previous one with :cp. :cr will
+jump to the first error, as well as :cfirst, and :clast goes to the last one.
+You can see the error messages/error list with :copen (:cwindow only opens if
+there are errors), close it with :cclose.
+
+For more information, see :help quickfix.
 
 There's no support at the moment for multiple files, or for sbt.
 
