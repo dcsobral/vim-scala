@@ -10,3 +10,20 @@ You really should be using Tim Pope's Pathogen module for Vim
 http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen) if you're
 going to clone this repository because, well... you should.
 
+EXTRA REQUIREMENTS
+
+Convertion to operator style (<leader>s.) and surrounding with triple double-quotes
+(<leader>s") require the following plugin:
+
+https://github.com/tpope/vim-surround
+
+That plugin, in turn, can make use of this one:
+
+https://github.com/tpope/vim-repeat
+
+Additionally, code reformatting (<leader>i) requires scalariform:
+
+https://github.com/mdr/scalariform
+
+I put the downloaded jar file on my home's bin. If you place it elsewhere, you'll have
+to change ftplugin/scala.vim.
